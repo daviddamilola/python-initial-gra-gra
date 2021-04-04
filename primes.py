@@ -32,6 +32,13 @@ def erasthosthenesSive(n):
             nonPrimes[j] = True
 
 
+def prime_sequence(begin, end):
+    """ Generates the sequence of prime numbers between begin and end. """
+    for value in range(begin, end + 1):
+        if is_prime(value):
+            yield value
+
+            
 def main():
     """
     tests for primality of an integer entered by a user
